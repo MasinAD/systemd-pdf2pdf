@@ -1,6 +1,6 @@
 #!/bin/bash
 PDFDIR=$HOME/pdf
-OUTPUT=$HOME/Dokumente
+OUTPUT=$(xdg-user-dir DOCUMENTS)
 for i in $PDFDIR/*pdf
 do
 	[ -f "$i" ] && ls -al "$i"
