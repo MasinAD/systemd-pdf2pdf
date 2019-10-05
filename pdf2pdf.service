@@ -1,0 +1,6 @@
+[Unit]
+Description=Convert PDF to PDF because PDFs are not always standard-conform
+
+[Service]
+Type=oneshot
+ExecStart=%h/bin/pdf2pdf.sh

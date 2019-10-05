@@ -1,0 +1,10 @@
+[Unit]
+Description=Watch path for PDF files, then convert them to PDF
+
+[Path]
+PathChanged=%h/pdf
+MakeDirectory=true
+DirectoryMode=0700
+
+[Install]
+WantedBy=paths.target

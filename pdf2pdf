@@ -1,0 +1,9 @@
+#!/bin/bash
+PDFDIR=$HOME/pdf
+OUTPUT=$HOME/Dokumente
+for i in $PDFDIR/*pdf
+do
+	[ -f "$i" ] && ls -al "$i"
+	pdftocairo -pdf "$i" "$OUTPUT/${i##"$PDFDIR"/}" && rm "$i"
+done
+
